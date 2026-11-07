@@ -1,1 +1,307 @@
-hi
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한문 탐구 활동지 - 고사성어 수사대</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .info-row input {
+            border: none;
+            border-bottom: 1px solid #000;
+            outline: none;
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .process-box {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .case-box {
+            border: 2px solid #2c3e50;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .case-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 5px;
+        }
+        .hashtags {
+            color: #3498db;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .story {
+            background: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #2c3e50;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        table, th, td {
+            border: 1px solid #2c3e50;
+        }
+        th {
+            background-color: #ecf0f1;
+            padding: 8px;
+            text-align: center;
+        }
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+        .magnify {
+            background-color: #fff3cd;
+            padding: 10px;
+            border: 1px dashed #e67e22;
+            margin-bottom: 15px;
+        }
+        .magnify-title {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .detective-q {
+            background-color: #e8eaed;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .detective-q input[type="text"] {
+            width: 60%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .quiz-section {
+            border-top: 3px dashed #7f8c8d;
+            padding-top: 20px;
+            margin-top: 30px;
+        }
+        .quiz-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #27ae60;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .textarea-box {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>[한문 탐구 활동지] 고사성어 수사대 : 비유의 달인</h1>
+    <div class="subtitle">주제: 상황에 맞는 비유적 성어를 분석하라!</div>
+
+    <div class="info-row">
+        <div>학년 반 번호: <input type="text" id="studentId" placeholder="예: 1-2-3"></div>
+        <div>이름: <input type="text" id="studentName" placeholder="이름 입력"></div>
+    </div>
+
+    <div class="process-box">
+        수사 순서: ① 사건 글 읽기 → ② 굵은 낱말의 한자 확인 및 빈칸(음·뜻) 채우기 → ③ 추리 질문 해결
+    </div>
+
+    <!-- CASE 01 -->
+    <div class="case-box">
+        <div class="case-header">CASE 01 뱀의 발을 그린 자와 떨어지는 입술</div>
+        <div class="hashtags">#뱀그리기내기 #쓸데없는짓 #이웃나라</div>
+        <div class="story">
+            뱀을 그리는 내기에서 가장 먼저 완성한 사람이 술을 마시기로 했다. A는 가장 먼저 완성했지만 쓸데없이 발을 그려 넣어 패하게 되었다. 한편, 이웃나라 B와 C는 서로 의지하는 사이였으나, B나라가 망하자 C나라도 위태로워졌다.
+        </div>
+        
+        <table>
+            <tr>
+                <th width="20%">한자어</th>
+                <th width="20%">음</th>
+                <th>뜻</th>
+            </tr>
+            <tr>
+                <td>畫蛇添足</td>
+                <td>화사첨족</td>
+                <td>뱀을 그리고 발을 더한다는 뜻으로, 쓸데없는 일을 하여 도리어 실패함</td>
+            </tr>
+            <tr>
+                <td>脣亡齒寒</td>
+                <td><input type="text" style="width:90%; border:none; text-align:center;" placeholder="입력"></td>
+                <td>입술이 없으면 이가 시리다는 뜻으로, 서로 의지하던 한쪽이 망하면 다른 쪽도 위태로워짐</td>
+            </tr>
+        </table>
+
+        <div class="magnify">
+            <span class="magnify-title">Q 한자 돋보기</span><br>
+            添 (더할 첨): 물(水)을 더하여 보탠다는 의미<br>
+            脣 (입술 순): 사람의 신체 부위 중 입술을 뜻함
+        </div>
+
+        <div class="detective-q">
+            추리 질문: 친구의 대화에 들어갈 성어를 위 표에서 골라 적으시오.<br><br>
+            "영화 속 두 인물이 티격태격하면서도 늘 붙어 다니고 서로를 챙기는 모습이 재밌더라고! 그러게, 정말 ( <input type="text" placeholder="성어 4글자"> ) 같더라."
+        </div>
+    </div>
+
+    <!-- CASE 02 -->
+    <div class="case-box">
+        <div class="case-header">CASE 02 칼을 찾는 자와 변방의 노인</div>
+        <div class="hashtags">#어리석음 #화와복 #반전의반전</div>
+        <div class="story">
+            D는 배를 타고 가다 물에 칼을 빠뜨리자, 배에 칼자국을 새기고 나중에 찾으려 하는 어리석은 행동을 했다. 한편, 변방 노인 E의 말이 도망갔으나 훗날 준마를 데려와 복이 되었고, 아들이 그 말을 타다 다리가 부러졌으나 그 덕에 징집을 면해 목숨을 구했다. 기쁨이 재앙이 되고, 재앙이 기쁨이 되었다.
+        </div>
+        
+        <table>
+            <tr>
+                <th width="20%">한자어</th>
+                <th width="20%">음</th>
+                <th>뜻</th>
+            </tr>
+            <tr>
+                <td>刻舟求劍</td>
+                <td>각주구검</td>
+                <td>배에 칼자국을 새기고 물에 떨어진 칼을 찾으려 한 어리석은 행동</td>
+            </tr>
+            <tr>
+                <td>塞翁之馬</td>
+                <td><input type="text" style="width:90%; border:none; text-align:center;" placeholder="입력"></td>
+                <td>변방 노인의 말이 화와 복으로 번갈아 바뀌는 이야기. 인간 만사의 길흉화복은 예측할 수 없음</td>
+            </tr>
+        </table>
+
+        <div class="magnify">
+            <span class="magnify-title">Q 한자 돋보기</span><br>
+            刻 (새길 각): 칼(刀)을 사용하여 나무 등에 새김<br>
+            塞 (변방 새): 국경의 주변이나 험한 요새를 뜻함
+        </div>
+
+        <div class="detective-q">
+            추리 질문: 다음 괄호 안에 들어갈 적절한 성어는?<br><br>
+            인간 만사 ( <input type="text" placeholder="성어 4글자"> )(이)라더니, 지난날 기쁨을 주었던 황금이 오늘날 내게 재앙이 될 줄이야!
+        </div>
+    </div>
+
+    <!-- 형성평가 -->
+    <div class="quiz-section">
+        <div class="quiz-title">[형성평가] 사건 종결 테스트</div>
+        
+        <div class="question">
+            <p>1. [객관식] 『순오지』에서 유래하였으며, "한 마리의 물고기가 물을 흐리게 하듯 한 사람의 잘못이 전체를 해친다"는 뜻을 가진 성어는 무엇입니까?</p>
+            <label><input type="radio" name="q1" value="1"> ① 우공이산 (愚公移山)</label><br>
+            <label><input type="radio" name="q1" value="2"> ② 수주대토 (守株待兔)</label><br>
+            <label><input type="radio" name="q1" value="3"> ③ 일어탁수 (一魚濁水)</label><br>
+            <label><input type="radio" name="q1" value="4"> ④ 당랑거철 (螳螂拒轍)</label><br>
+            <label><input type="radio" name="q1" value="5"> ⑤ 화사첨족 (畫蛇添足)</label>
+        </div>
+
+        <div class="question">
+            <p>2. [주관식] 통계학의 '평균으로의 회귀(regression to the mean)' 현상(예: 신인 스타의 2년차 징크스, 맛집의 맛이 평범해지는 현상 등)과 가장 잘 어울리는 본문 학습 성어는 무엇인지 적고, 그 이유를 서술하시오.</p>
+            <textarea id="q2" class="textarea-box" placeholder="성어 이름과 그 이유를 서술하세요."></textarea>
+        </div>
+
+        <!-- 제출 버튼 -->
+        <button class="submit-btn" onclick="submitWorksheet()">결과 이메일로 제출하기</button>
+    </div>
+
+</div>
+
+<script>
+    function submitWorksheet() {
+        const studentId = document.getElementById('studentId').value || '미입력';
+        const studentName = document.getElementById('studentName').value || '미입력';
+        const q1 = document.querySelector('input[name="q1"]:checked');
+        const q1Answer = q1 ? q1.value + '번' : '선택 안함';
+        const q2Answer = document.getElementById('q2').value || '미입력';
+
+        if(studentName === '미입력' || studentId === '미입력') {
+            alert('학번과 이름을 입력해주세요.');
+            return;
+        }
+
+        const subject = `[한문 활동지 제출] ${studentId} ${studentName}`;
+        let body = `선생님, ${studentId} ${studentName} 학생의 형성평가 제출 결과입니다.\n\n`;
+        body += `[객관식 1번 답]: ${q1Answer}\n`;
+        body += `[주관식 2번 답]: ${q2Answer}\n\n`;
+        body += `감사합니다.`;
+
+        // 이메일 전송을 위한 mailto 링크 생성
+        // 받는 사람 이메일 주소를 'teacher@school.com' 대신 실제 선생님 이메일로 변경하세요.
+        const mailtoLink = `mailto:teacher@school.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        window.location.href = mailtoLink;
+    }
+</script>
+
+</body>
+</html>
